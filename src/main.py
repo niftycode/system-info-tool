@@ -5,12 +5,12 @@ Entry point of this program
 Version: 1.0
 Python 3.12
 Date created: October 5th, 2023
-Date modified: -
+Date modified: January 26th, 2024
 """
 
 import logging
 import os
-import pprint
+# import pprint
 
 from logging.config import fileConfig
 
