@@ -1,4 +1,4 @@
 setuptools
 flake8
 black
-
+mypy
