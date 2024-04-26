@@ -4,7 +4,9 @@ Mit diesem Programm können Systeminformationen (macOS, Linux, Windows) gelesen 
 
 Eine vereinfachte Version existiert auch im Repository [small-python-projects](https://github.com/niftycode/small-python-projects).
 
-Dieses Programm dient derzeit lediglich zu Schulungszwecken. 
+Dieses Programm dient derzeit lediglich zu Schulungszwecken.
+
+---
 
 This program can be used to read system information (macOS, Linux, Windows). Python is used as the programming language.
 

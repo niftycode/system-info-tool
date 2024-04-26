@@ -10,6 +10,7 @@ Date modified: January 26th, 2024
 
 import logging
 import os
+
 # import pprint
 
 from logging.config import fileConfig
@@ -34,7 +35,7 @@ def main():
     print("User Info:")
     print("------------")
     system_info.fetch_user_info()
-    '''
+    """
     system_env = os.environ
     # pprint.pprint(dict(system_env))
 
@@ -57,7 +58,8 @@ def main():
         print(e)
 
     # Or use get() instead of an exception handling.
-    '''
+    """
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
