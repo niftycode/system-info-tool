@@ -16,6 +16,7 @@ import os
 from logging.config import fileConfig
 
 from src import system_info
+from src.colors import Colors
 
 # Add logger config
 fileConfig("logging.ini")
