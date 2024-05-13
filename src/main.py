@@ -22,18 +22,23 @@ fileConfig("logging.ini")
 logger = logging.getLogger()
 
 
+def print_purple(text):
+    print(f"\033[95m{text}\033[0m")
+
+
 def main():
     system_env = os.environ
 
-    print("System Info:")
-    print("------------")
+    print()
+    print_purple("System Info:")
+    print_purple("-----------------------------------------")
     system_info.fetch_system_info()
 
     print(system_env["SHELL"])
 
     print()
-    print("User Info:")
-    print("------------")
+    print_purple("User Info:")
+    print_purple("-----------------------------------------")
     system_info.fetch_user_info()
     """
     system_env = os.environ
