@@ -16,14 +16,18 @@ import os
 from logging.config import fileConfig
 
 from src import system_info
-from src.colors import Colors
+# from src.colors import Colors
 
 # Add logger config
 fileConfig("logging.ini")
 logger = logging.getLogger()
 
 
-def print_purple(text):
+def print_purple(text: str):
+    """
+    Outputs the text in purple color
+    :param text: The text to display
+    """
     print(f"\033[95m{text}\033[0m")
 
 
@@ -35,7 +39,7 @@ def main():
     print_purple("-----------------------------------------")
     system_info.fetch_system_info()
 
-    print(system_env["SHELL"])
+    print(f"Login Shell: {system_env["SHELL"]}")
 
     print()
     print_purple("User Info:")
