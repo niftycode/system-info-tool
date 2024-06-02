@@ -5,45 +5,44 @@ Entry point of this program
 Version: 1.0
 Python 3.12
 Date created: October 5th, 2023
-Date modified: January 26th, 2024
+Date modified: June 2nd, 2024
 """
 
 import logging
 import os
 
-# import pprint
 
 from logging.config import fileConfig
 
 from src import system_info
-# from src.colors import Colors
+
 
 # Add logger config
 fileConfig("logging.ini")
 logger = logging.getLogger()
 
 
-def print_purple(text: str):
+def print_magenta(text: str):
     """
     Outputs the text in purple color
     :param text: The text to display
     """
-    print(f"\033[95m{text}\033[0m")
+    print(f"\033[35m{text}\033[0m")
 
 
 def main():
     system_env = os.environ
 
     print()
-    print_purple("System Info:")
-    print_purple("-----------------------------------------")
+    print_magenta("System Info:")
+    print_magenta("-----------------------------------------")
     system_info.fetch_system_info()
 
     print(f"Login Shell: {system_env["SHELL"]}")
 
     print()
-    print_purple("User Info:")
-    print_purple("-----------------------------------------")
+    print_magenta("User Info:")
+    print_magenta("-----------------------------------------")
     system_info.fetch_user_info()
     """
     system_env = os.environ
