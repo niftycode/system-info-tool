@@ -2,3 +2,4 @@ setuptools
 flake8
 black
 mypy
+pytest
