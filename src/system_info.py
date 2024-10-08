@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 
 """
-Displays information about the operating system
-Works on Linux, Windows and macOS
 Version: 1.0
 Python 3.12+
-Date created: December 9th, 2023
+Date created: October 8th, 2024
 Date modified: -
 """
 
@@ -22,6 +20,9 @@ MAC_OS = "Darwin"
 
 
 def fetch_system_info():
+    """
+    Fetch system information
+    """
     print("System Platform: ", sys.platform)
     print("Name: ", socket.gethostname())
     print("FQDN: ", socket.getfqdn())
@@ -41,6 +42,9 @@ def fetch_system_info():
 
 
 def fetch_user_info():
+    """
+    Fetch user information
+    """
     if platform.system() != WINDOWS:
         user_identifier = os.getuid()
         group = os.getgroups()
@@ -50,12 +54,3 @@ def fetch_user_info():
     print("Login Name", os.getlogin())
     print("Current Directory", os.getcwd())
     print("Current Time: ", time.ctime(time.time()))
-
-
-def main():
-    fetch_system_info()
-    fetch_user_info()
-
-
-if __name__ == "__main__":
-    main()
