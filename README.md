@@ -4,6 +4,7 @@
 ![Static Badge](https://img.shields.io/badge/python-3.13-blue)
 ![GitHub License](https://img.shields.io/github/license/niftycode/system-info-tool)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/niftycode/system-info-tool)
 
 This program can be used to read system information (macOS, Linux, Windows). Python is used as the programming language.
 
