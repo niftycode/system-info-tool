@@ -59,4 +59,4 @@ def fetch_user_info():
         system_env = os.environ
 
         # Show home directory
-        print(f"Windows Directory: {system_env["WINDIR"]}")
+        print(f"Windows Directory: {system_env['WINDIR']}")
