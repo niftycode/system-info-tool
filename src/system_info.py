@@ -4,7 +4,7 @@
 Version: 1.0
 Python 3.12+
 Date created: October 8th, 2024
-Date modified: -
+Date modified: October 9th, 2024
 """
 
 from uuid import getnode as get_mac
@@ -48,9 +48,15 @@ def fetch_user_info():
     if platform.system() != WINDOWS:
         user_identifier = os.getuid()  # type: ignore
         group = os.getgroups()  # type: ignore
-        print("User number", user_identifier)
-        print("Group", group)
-    print("Process ID", os.getpid())
-    print("Login Name", os.getlogin())
-    print("Current Directory", os.getcwd())
+        print("User number:", user_identifier)
+        print("Group:", group)
+    print("Process ID:", os.getpid())
+    print("Login Name:", os.getlogin())
+    print("Current Directory:", os.getcwd())
     print("Current Time: ", time.ctime(time.time()))
+
+    if platform.system() == WINDOWS:
+        system_env = os.environ
+
+        # Show home directory
+        print(f"Windows Directory: {system_env["WINDIR"]}")
