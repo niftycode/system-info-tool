@@ -46,8 +46,8 @@ def fetch_user_info():
     Fetch user information
     """
     if platform.system() != WINDOWS:
-        user_identifier = os.getuid()
-        group = os.getgroups()
+        user_identifier = os.getuid()  # type: ignore
+        group = os.getgroups()  # type: ignore
         print("User number", user_identifier)
         print("Group", group)
     print("Process ID", os.getpid())
